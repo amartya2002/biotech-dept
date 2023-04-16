@@ -7,4 +7,29 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
-
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-enter {
+    animation: fadeIn 0.2s ease-in-out;
+    opacity: 0;
+  }
+  
+  .fade-in-enter-active {
+    opacity: 1;
+  }
+  
+  .fade-in-exit {
+    animation: fadeIn 0.9s ease-in-out reverse;
+    opacity: 1;
+  }
+  
+  .fade-in-exit-active {
+    opacity: 0;
+  }

@@ -7,10 +7,10 @@ export default () => {
         "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
       name: "Liam James",
 
-      contact: "700396059ggggg",
-      position: "HOD, Profef fjfjjdufh nfnvifjkds fnjfnuivjf fkkodkdkd vnvjfifkj dmnnjdijdmd fnfivjfmn ggggggg ggggggg gggggggggg ggggggggggggggggggggggggggggggg",
+      contact: "7003960597",
+      position: "HOD, Professor",
       Room: "202",
-      email: "xyddddddddddz@hit.com",
+      email: "xydddddddz@hit.com",
     },
   ];
 
@@ -22,8 +22,8 @@ export default () => {
         </h3>
       </div>
       <div className="mt-2 shadow-sm border rounded-lg overflow-scroll h-22 ">
-        <table className="text-sm table-fixed ">
-          <thead className="bg-gray-50 text-gray-600 font-medium border-b">
+        <table className=" table-fixed ">
+          <thead className="bg-gray-50 text-dark font-semibold border-b">
             <tr className="text-left">
               <th className="w-1/3 py-3 px-6">Name</th>
               <th className=" w-1/3  py-3 px-6">Designation</th>
@@ -31,7 +31,7 @@ export default () => {
               <th className="py-3 px-6 w-1/3 ">Room</th>
             </tr>
           </thead>
-          <tbody className="text-gray-600 divide-y">
+          <tbody className="text-gray-600 divide-y text-sm">
             {tableItems.map((item, idx) => (
               <tr key={idx}>
                 <td className="flex items-center gap-x-3 py-5 pl-5 pr-12 lg:pr-0 ">
@@ -45,13 +45,13 @@ export default () => {
                     </span> */}
                   </div>
                 </td>
-                <td className="   px-6 py-4  ">
+                <td className=" text-silver font-semibold   px-6 py-4  ">
                   {item.position}
                 </td>
-                <td className="px-6 py-4   "> {item.contact}
+                <td className="px-6 py-4 text-silver font-semibold   "> {item.contact}
                 <p>{item.email}</p>
                 </td>
-                <td className="px-6 py-4 ">{item.Room}</td>
+                <td className="px-6 py-4 text-silver font-semibold  ">{item.Room}</td>
               </tr>
             ))}
           </tbody>

@@ -24,29 +24,29 @@ export default () => {
         </h3>
       </div>
       <div className="mt-2 shadow-sm border rounded-lg overflow-scroll h-22 ">
-        <table class="table-fixed border text-sm">
+        <table className="table-fixed border text-sm">
         <thead className="bg-gray-50 text-gray-600 font-medium border-b">
     <tr className=' text-left'>
-      <th class="w-1/3 py-3 px-6">Name</th>
-      <th class="w-1/3 py-3 px-6">Age</th>
-      <th class="w-1/3 py-3 px-6">Location</th>
+      <th className="w-1/3 py-3 px-6">Name</th>
+      <th className="w-1/3 py-3 px-6">Age</th>
+      <th className="w-1/3 py-3 px-6">Location</th>
     </tr>
   </thead>
   <tbody className="text-gray-600 divide-y">
     <tr>
-      <td class="px-6 py-4 ">John Smith</td>
-      <td class="px-6 py-4 ">35ffffffffffffffffjjjjjjjjjjjjjj sjsjjjjjjj hn Smithfffffffffffffffffffffff  fffffffffffffffffffffff ssssssssssssssssssssss ssssssssssssssssssssssssssjj</td>
-      <td class="px-6 py-4">San Francisco, CA</td>
+      <td className="px-6 py-4 ">John Smith</td>
+      <td className="px-6 py-4 ">35ffffffffffffffffjjjjjjjjjjjjjj sjsjjjjjjj hn Smithfffffffffffffffffffffff  fffffffffffffffffffffff ssssssssssssssssssssss ssssssssssssssssssssssssssjj</td>
+      <td className="px-6 py-4">San Francisco, CA</td>
     </tr>
     <tr>
-      <td class="px-6 py-4">Jane Doe</td>
-      <td class="px-6 py-4">27</td>
-      <td class="px-6 py-4">New York, NY</td>
+      <td className="px-6 py-4">Jane Doe</td>
+      <td className="px-6 py-4">27</td>
+      <td className="px-6 py-4">New York, NY</td>
     </tr>
     <tr>
-      <td class="px-6 py-4">Bob Johnson</td>
-      <td class="px-6 py-4">42</td>
-      <td class="px-6 py-4">Chicago, IL</td>
+      <td className="px-6 py-4">Bob Johnson</td>
+      <td className="px-6 py-4">42</td>
+      <td className="px-6 py-4">Chicago, IL</td>
     </tr>
   </tbody>
 </table>

@@ -41,7 +41,7 @@ function ImageCarousal() {
   };
 
   return (
-    <div className='z-10 w-96 h-72 sm:w-full sm:h-full  m-auto mt-20 px-4 relative group'>
+    <div className=' w-72 h-64 sm:w-full sm:h-1/2  m-auto mt-20 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'

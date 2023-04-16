@@ -3,96 +3,43 @@ import Navbar from "@/components/Header"
 export default () => {
 
     return (
-        <section>
-            <Navbar/>
-            <div className="flex  ">
-                
-                <Sidebar/>
-                <div className="justify-center flex items-center">hello</div>
-        <main className="py-10 flex ">
-            <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-                <div className="max-w-lg mx-auto space-y-3 sm:text-center">
-                   
-                    <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Get in touch
-                    </p>
-                    <p>
-                        We’d love to hear from you! Please fill out the form bellow.
-                    </p>
-                </div>
-                <div className="mt-12 max-w-lg mx-auto">
-                    <form
-                        onSubmit={(e) => e.preventDefault()}
-                        className="space-y-5"
-                    >
-                        <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
-                            <div>
-                                <label className="font-medium">
-                                    First name
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                            <div>
-                                <label className="font-medium">
-                                    Last name
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                        </div>
-                        <div>
-                            <label className="font-medium">
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                required
-                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                            />
-                        </div>
-                        <div>
-                            <label className="font-medium">
-                                Phone number
-                            </label>
-                            <div className="relative mt-2">
-                                <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
-                                    <select className="text-sm bg-transparent outline-none rounded-lg h-full">
-                                        <option>US</option>
-                                        <option>ES</option>
-                                        <option>MR</option>
-                                    </select>
-                                </div>
-                                <input
-                                    type="number"
-                                    placeholder="+1 (555) 000-000"
-                                    required
-                                    className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                        </div>
-                        <div>
-                            <label className="font-medium">
-                                Message
-                            </label>
-                            <textarea required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
-                        </div>
-                        <button
-                            className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-                        >
-                            Submit
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </main>
+
+        <div>
+        <Navbar/>
+        <div className='flex '>
+        <Sidebar/>
+            
+        <section className=" py-5 rounded-xl w-full mx-auto md:ml-10 md:mr-36 ">
+        <section className="bg-white dark:bg-gray-900">
+  <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+      <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <form action="#" className="space-y-8">
+          <div>
+              <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+              <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required/>
+          </div>
+          <div>
+              <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+              <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required/>
+          </div>
+          <div className="sm:col-span-2">
+              <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+              <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+          </div>
+          <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+      </form>
+  </div>
+</section>
+        
+        
+
+      </section>
+        
         </div>
-        </section>
+       
+
+    </div>
+   
     )
 }

@@ -4,7 +4,7 @@ import ImageCarousal from "./ImageCarousal";
 export default () => {
   return (
     <>
-      <section className="py-14    rounded-xl w-full mx-auto md:ml-10 md:mr-36 ">
+      <section className="py-14    rounded-xl w-full mx-auto lg:mr-32 ">
         <div className=" ">
           <p className="text-3xl text-center mb-1 text-silver">
             Department of <span className="text-dark">Biotechnology</span>{" "}
@@ -18,7 +18,7 @@ export default () => {
           </p>
         </div>
         <HomeKeypeopleTable/>
-        <ImageCarousal/>
+        {/* <ImageCarousal/> */}
         {/* <Table/> */}
 
       </section>
