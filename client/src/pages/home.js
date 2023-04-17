@@ -7,16 +7,13 @@ import HomeContent from '@/components/HomeContent'
 function home() {
   return (
     <div>
-        <Navbar/>
-        <div className='flex '>
-        <Sidebar/>
-            <HomeContent/>
-        
-        </div>
-       
-
+      <Navbar />
+      <div className="flex ">
+        <Sidebar />
+        <HomeContent />
+      </div>
     </div>
-  )
+  );
 }
 
 export default home

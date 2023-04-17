@@ -7,29 +7,46 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .fade-in-enter {
-    animation: fadeIn 0.2s ease-in-out;
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
     opacity: 0;
   }
-  
-  .fade-in-enter-active {
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
-  
-  .fade-in-exit {
-    animation: fadeIn 0.9s ease-in-out reverse;
-    opacity: 1;
-  }
-  
-  .fade-in-exit-active {
+}
+.animate-slideInLeft {
+  animation: slideInLeft 0.2s ease-out;
+}
+
+@keyframes modal {
+  from{
     opacity: 0;
   }
+  to{
+    opacity:1;
+  }
+}
+
+.animate-modal {
+  animation: modal 0.2s ease-out;
+}
+
+.text-gradient-blue {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #56CCF2, #6D7FFF);
+  
+  /* background-image: linear-gradient(to right,#FEAC5E, #C779D0, #4bc0c8); */
+
+
+
+  /* background-image: linear-gradient(to right, #7b4397, #dc2430); */
+
+  /* background-image: linear-gradient(to right, #D1913C, #FFD194); */
+
+}
+
+

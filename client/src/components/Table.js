@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => {
+function Table {
 
     const tableItems = [
         {
@@ -124,7 +124,7 @@ export default () => {
                             tableItems.map((item, idx) => (
                                 <tr key={idx}>
                                     <td className="flex items-center gap-x-3 py-3 px-6 whitespace-nowrap">
-                                        <img src={item.avatar} className="w-12 h-12 rounded-full" />
+                                        <img src={item.avatar} alt="" className="w-12 h-12 rounded-full" />
                                         <div>
                                             <span className="block text-black text-sm font-semibold">{item.name}</span>
                                             {/* <span className="block text-gray-700 text-xs">{item.email}</span> */}
@@ -142,3 +142,4 @@ export default () => {
         </div>
     )
 }
+export default Table;
