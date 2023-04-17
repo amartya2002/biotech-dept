@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Table {
+function Table() {
 
     const tableItems = [
         {
