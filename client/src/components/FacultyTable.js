@@ -12,7 +12,7 @@ function FacultyTable() {
     {
       avatar:
         "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-      name: "Liam James",
+      name: "Liamdddsssssssss Jamedddds laosjdddjcjdn d",
       contact: "7003960597",
       position: "HOD, Professor",
       specialization:
@@ -24,7 +24,7 @@ function FacultyTable() {
       avatar: "https://randomuser.me/api/portraits/men/86.jpg",
       name: "Liam James",
       contact: "7003960597",
-      position: "HOD, Professor",
+      position: "HOD, Professorffvfdcnjdnv iejdekmdk",
       specialization:
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
@@ -146,7 +146,7 @@ function FacultyTable() {
         <p
           className={`text-2xl font-bold text-gray-900 mr-4 hover:text-blue-500  duration-200 active:scale-105 `}
         >
-          Key People{" "}
+          Faculty{" "}
         </p>
         <button
           onClick={handleClick}
@@ -182,7 +182,7 @@ function FacultyTable() {
             {tableItems.map((item, idx) => (
               <tr key={idx}>
                 <td className="py-5">
-                  <div className="flex items-center justify-center gap-x-3  pl-10 pr-10 lg:pr-0  ">
+                  <div className="flex items-center gap-x-3  pl-5 pr-12   ">
                     <img
                       src={item.avatar}
                       alt=""

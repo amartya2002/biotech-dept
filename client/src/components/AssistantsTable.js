@@ -146,7 +146,7 @@ function AssistantsTable (){
         <p
           className={`text-2xl font-bold text-gray-900 mr-4 hover:text-blue-500  duration-200 active:scale-105 `}
         >
-          Key People{" "}
+          Technical & General Assistants{" "}
         </p>
         <button
           onClick={handleClick}
@@ -182,7 +182,7 @@ function AssistantsTable (){
             {tableItems.map((item, idx) => (
               <tr key={idx}>
                 <td className="py-5">
-                  <div className="flex items-center justify-center gap-x-3  pl-10 pr-10 lg:pr-0  ">
+                  <div className="flex items-center  gap-x-3  pl-5 pr-12   ">
                     <img
                       src={item.avatar}
                       alt=""
