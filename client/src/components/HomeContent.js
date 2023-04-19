@@ -5,9 +5,9 @@ function HomeContent() {
     <>
       <section className="py-14    rounded-xl w-full mx-auto lg:mr-32 ">
         <div className="text-center">
-          <p className="text-4xl font-bold text-gray-900 mb-2">
+          <p className="text-4xl font-bold text-gray-900 mb-2 duration-200 active:scale-105">
             Department of{" "}
-            <span className="text-gradient-blue">Biotechnology</span>
+            <span className="text-gradient-blue ">Biotechnology</span>
           </p>
           <p className="text-sm font-bold text-gray-500 mb-3">
             (NBA ACCREDITED)

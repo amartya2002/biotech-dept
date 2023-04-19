@@ -19,7 +19,7 @@ function Navbar() {
             <header className="flex justify-between items-center h-16 ">
               <div className="flex space-x-3 ">
                 <button
-                  className="flex-shrink-0 hover:text-blue-500 -ml-2 transition-all   "
+                  className="flex-shrink-0 hover:text-blue-500 -ml-2   active:scale-110 duration-200   "
                   onClick={() => {
                     setOpenSidebar(!openSidebar);
                   }}
@@ -43,15 +43,15 @@ function Navbar() {
                   <li>
                     <Link
                       href="home"
-                      className="text-silver  hover:bg-gray-100  px-3 py-2 rounded-full text-sm font-semibold"
-                    >
+                      className="text-silver px-3 py-2 rounded-full text-sm font-semibold duration-200 hover:scale-110 active:scale-125 hover:text-blue-500 "
+                    >  
                       Home
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/about-department"
-                      className="text-silver  hover:bg-gray-100  px-3 py-2 rounded-full text-sm font-semibold"
+                      className="text-silver    px-3 py-2 rounded-full text-sm font-semibold duration-200 hover:scale-110 active:scale-125 hover:text-blue-500 "
                     >
                       Our Department
                     </Link>
@@ -59,7 +59,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="/about-department"
-                      className="text-silver  hover:bg-gray-100  px-3 py-2 rounded-full text-sm font-semibold"
+                      className="text-silver    px-3 py-2 rounded-full text-sm font-semibold duration-200 hover:scale-110 active:scale-125 hover:text-blue-500"
                     >
                       Institute Info
                     </Link>
@@ -67,7 +67,7 @@ function Navbar() {
                   <li>
                     <Link
                       href="contact"
-                      className="text-silver  hover:bg-gray-100  px-3 py-2 rounded-full text-sm font-semibold"
+                      className="text-silver    px-3 py-2 rounded-full text-sm font-semibold duration-200 hover:scale-110 active:scale-125 hover:text-blue-500"
                     >
                       Contact
                     </Link>
@@ -76,14 +76,15 @@ function Navbar() {
               </nav>
               <div className="hidden md:flex sm:items-center">
                 <div className="ml-3 relative">
-                  <button className="text-white  px-4 py-2 rounded-full text-sm font-medium bg-black hover:bg-black ">
+                  <button className="text-white  px-4 py-2 rounded-full text-sm font-medium bg-black hover:scale-105 active:scale-110 duration-200  ">
+                 
                     <Link href="/sign-in"> Faculty Login</Link>
                   </button>
                 </div>
               </div>
               <div className="md:hidden flex items-center">
                 <button
-                  className="text-gray-700 hover:bg-slate-100 inline-flex items-center justify-center p-2 rounded-xl transition-all duration-200 ease-in-out fade-in-enter fade-in-enter-active "
+                  className="text-gray-700 hover:bg-slate-100 inline-flex items-center justify-center p-2 rounded-xl transition-all ease-in-out fade-in-enter fade-in-enter-active active:scale-110 duration-200 "
                   aria-label="Open main menu"
                   onClick={() => {
                     setOpenModal(!openModal);
@@ -126,7 +127,7 @@ function MobileSidebar({ closeSidebar }) {
         className=" left-0 top-0  fixed  flex-col w-3/5 h-screen px-5 py-8 overflow-y-auto bg-white  dark:bg-gray-900 dark:border-gray-700 animate-slideInLeft border-r border-grey-200 shadow-lg"
       >
         <Link href="/">
-        <p className="text-dark text-center font-bold tracking-wide  ">
+        <p className="text-dark text-center font-bold tracking-wide active:scale-110 duration-200 ">
           Department of{" "}
           <span className="text-gradient-blue">Biotechnology</span>
         </p>
@@ -136,7 +137,7 @@ function MobileSidebar({ closeSidebar }) {
         <div className="flex flex-col mt-4">
           <nav className="flex-1 -mx-3 space-y-4 tracking-wide leading-tight ">
             <Link
-              className=" font-bold flex items-center px-3 py-2 text-silver  rounded-full hover:bg-gray-200 hover:text-black hover:font-bold"
+              className=" font-bold flex items-center px-3 py-2 text-silver  rounded-full hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200"
               href="/faculty"
             >
               <svg
@@ -154,13 +155,13 @@ function MobileSidebar({ closeSidebar }) {
                   d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
                 ></path>
               </svg>
-              <span className="mx-2 text-sm font-semibold  leading-tight">
+              <span className="mx-2 text-sm font-semibold  leading-tight ">
                 Faculty
               </span>
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200  "
               href="/assistants"
             >
               <svg
@@ -184,7 +185,7 @@ function MobileSidebar({ closeSidebar }) {
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200  "
               href="/laboratories"
             >
               <svg
@@ -202,13 +203,13 @@ function MobileSidebar({ closeSidebar }) {
                 />
               </svg>
 
-              <span className="mx-2 text-sm font-semibold  leading-tight">
+              <span className="mx-2 text-sm font-semibold  leading-tight ">
                 Laboratories
               </span>
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver   rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver   rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200  "
               href="/library"
             >
               <svg
@@ -232,7 +233,7 @@ function MobileSidebar({ closeSidebar }) {
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200 "
               href="research-publications"
             >
               <svg
@@ -256,7 +257,7 @@ function MobileSidebar({ closeSidebar }) {
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  active:scale-105 duration-200 "
               href="grants-research-publications"
             >
               <svg
@@ -279,7 +280,7 @@ function MobileSidebar({ closeSidebar }) {
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200  "
               href="placement-records"
             >
               <svg
@@ -303,7 +304,7 @@ function MobileSidebar({ closeSidebar }) {
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200  "
               href="departmental-activities"
             >
               <svg
@@ -327,7 +328,7 @@ function MobileSidebar({ closeSidebar }) {
             </Link>
 
             <Link
-              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+              className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold active:scale-105 duration-200  "
               href="syllabus"
             >
               <svg
@@ -354,7 +355,7 @@ function MobileSidebar({ closeSidebar }) {
 
         <button
           onClick={() => closeSidebar(false)}
-          className="  mt-5 text-white  px-5 py-2 rounded-lg  bg-black"
+          className="  mt-5 text-white  px-5 py-2 rounded-lg  bg-black active:scale-105 duration-200"
         >
           Close
           {/* <svg
