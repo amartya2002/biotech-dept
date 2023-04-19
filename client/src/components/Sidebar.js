@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Sidebar() {
   return (
-    <aside className="  scrollbar-hide  flex-col w-58 h-screen px-5 py-8 overflow-y-auto bg-white   dark:bg-gray-900 dark:border-gray-700 hidden  lg:flex">
+    <aside className="  scrollbar-hide  flex-col w-58 h-screen px-5 py-8 overflow-y-auto bg-white    hidden  lg:flex">
       <p className="text-dark text-center font-bold tracking-wide  ">
         {" "}
         Department of Biotechnology

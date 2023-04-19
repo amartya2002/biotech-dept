@@ -124,7 +124,7 @@ function MobileSidebar({ closeSidebar }) {
       <div className="absolute inset-0   backdrop-filter backdrop-blur-lg bg-opacity-30 "></div>
       <aside
         ref={overlayRef}
-        className=" left-0 top-0  fixed  flex-col w-3/5 h-screen px-5 py-8 overflow-y-auto bg-white  dark:bg-gray-900 dark:border-gray-700 animate-slideInLeft border-r border-grey-200 shadow-lg"
+        className=" left-0 top-0  fixed  flex-col w-3/5 h-screen px-5 py-8 overflow-y-auto bg-white   animate-slideInLeft border-r border-grey-200 shadow-lg"
       >
         <Link href="/">
         <p className="text-dark text-center font-bold tracking-wide active:scale-110 duration-200 ">
