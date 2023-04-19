@@ -3,10 +3,10 @@ import { useState } from "react";
 import { BsSun, BsMoon  } from "react-icons/bs";
 
 function KeypeopleTable() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDarkMode, setIsDark] = useState(true);
 
   const handleClick = () => {
-    setIsDark(!isDark);
+    setIsDark(!isDarkMode);
   };
   const tableItems = [
     {
@@ -26,12 +26,12 @@ function KeypeopleTable() {
     <div className="  max-w-md sm:max-w-screen-xl mx-auto px-4 md:px-8  mt-10  ">
       <div className="max-w-lg flex jus=">
         <p className={`text-2xl font-bold text-gray-900 mr-4 hover:text-blue-500  duration-200 active:scale-105 ` }>Key People </p>  
-        <button onClick={handleClick} className="hover:text-blue-500 text-silver duration-200 active:scale-125 hover:scale-110 ">{isDark?<BsSun/>:<BsMoon/>}</button>
+        <button onClick={handleClick} className="hover:text-blue-500 text-silver duration-200 active:scale-125 hover:scale-110 ">{isDarkMode?<BsSun/>:<BsMoon/>}</button>
       </div>
      
       <div className="mt-2 shadow-sm border rounded-lg overflow-scroll h-22 ">
         <table className=" table-fixed  ">
-          <thead className={` text-black font-semibold  ${isDark ? "bg-black  text-white  font-semibold" : "border-b bg-gray-50"
+          <thead className={` text-black font-semibold  ${isDarkMode ? "bg-black  text-white  font-semibold" : "border-b bg-gray-50"
           } `}>
             <tr className="text-left">
               <th className="w-1/3 py-3 px-6    duration-200 active:scale-105   ">Name</th>
@@ -41,7 +41,7 @@ function KeypeopleTable() {
               <th className="py-3 px-6 w-1/3   duration-200 active:scale-105 ">Room</th>
             </tr>
           </thead>
-          <tbody className={`text-gray-600 divide-y text-sm ${isDark ? "bg-gradient-to-r from-grad1 to-grad2 text-veryLight        font-semibold" : ""
+          <tbody className={`text-gray-600 divide-y text-sm ${isDarkMode ? "bg-gradient-to-r from-grad1 to-grad2 text-veryLight        font-semibold" : ""
           } `}>
             {tableItems.map((item, idx) => (
               <tr key={idx}>
@@ -52,7 +52,7 @@ function KeypeopleTable() {
                       className="w-12 h-12 rounded-full hover:scale-110 duration-100 "
                     />
                     <div>
-                      <div className={`block  text-sm font-semibold  duration-200 active:scale-105 ${isDark ? "text-white" : "text-black"
+                      <div className={`block  text-sm font-semibold  duration-200 active:scale-105 ${isDarkMode ? "text-white" : "text-black"
           }`}>
                         {item.name}
                       </div>
