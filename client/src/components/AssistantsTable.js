@@ -1,6 +1,13 @@
 import React from "react";
+import { useState } from "react";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 function AssistantsTable (){
+  const [isDarkMode, setIsDark] = useState(true);
+
+  const handleClick = () => {
+    setIsDark(!isDarkMode);
+  };
   const tableItems = [
     {
       avatar:
@@ -46,131 +53,162 @@ function AssistantsTable (){
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1439911767590-c724b615299d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-        name: "Liam James",
-        contact: "7003960597",
-        position: "HOD, Professor",
-        specialization:
-          "Microwave, antenna, analog electronics, digital electronics",
-        Room: "202",
-        email: "xydddddddz@hit.com",
+      name: "Liam James",
+      contact: "7003960597",
+      position: "HOD, Professor",
+      specialization:
+        "Microwave, antenna, analog electronics, digital electronics",
+      Room: "202",
+      email: "xydddddddz@hit.com",
     },
   ];
 
   return (
     <div className="  max-w-md sm:max-w-screen-xl mx-auto px-4 md:px-8  ">
-      <div className="max-w-lg">
-        <p className="text-2xl font-bold text-gray-900 ">
-          Faculty members
+      <div className="max-w-lg flex ">
+        <p
+          className={`text-2xl font-bold text-gray-900 mr-4 hover:text-blue-500  duration-200 active:scale-105 `}
+        >
+          Key People{" "}
         </p>
+        <button
+          onClick={handleClick}
+          className="hover:text-blue-500 text-silver duration-200 active:scale-125 hover:scale-110 "
+        >
+          {isDarkMode ? <BsSun /> : <BsMoon />}
+        </button>
       </div>
       <div className="mt-5 shadow-sm border rounded-lg overflow-scroll   h-screen md:h-96  ">
         <table className=" table-fixed  ">
-          <thead className="bg-gray-50 text-dark font-semibold border-b">
+          <thead
+            className={`  ${
+              isDarkMode
+                ? "bg-black  text-white  font-semibold"
+                : "border-b bg-gray-100 text-black font-semibold "
+            }   `}
+          >
             <tr className="text-left">
               <th className="w-1/3 py-3 px-6 ">Name</th>
               <th className=" w-1/3  py-3 px-6">Designation</th>
               <th className="py-3 px-6 w-1/3 ">Specialization</th>
               <th className="py-3 px-6 w-1/3 ">Contact</th>
               <th className="py-3 px-6 w-1/3 ">Room</th>
-
             </tr>
           </thead>
-          <tbody className="text-gray-600 divide-y text-sm">
-  {tableItems.map((item, idx) => (
-    <tr key={idx}>
-      <td className="py-5">
-        <div className="flex items-center justify-center gap-x-3  pl-10 pr-10 lg:pr-0  ">
-          <img src={item.avatar} alt="" className="w-12 h-12 rounded-full " />
-          <div>
-            <div className="block text-black text-sm font-semibold">{item.name}</div>
-          </div>
-        </div>
-      </td>
-      <td className="py-4 px-6 text-silver font-semibold">{item.position}</td>
-      <td className="py-4 px-6 text-silver font-semibold">{item.specialization}<p>{item.email}</p></td>
-      <td className="py-4 px-6 text-silver font-semibold">{item.contact}</td>
-      <td className="py-4 px-6 text-silver font-semibold">{item.Room}</td>
-    </tr>
-  ))}
-</tbody>
-
+          <tbody
+            className={` divide-y text-sm ${
+              isDarkMode
+                ? "bg-gradient-to-r from-grad1 to-grad2 text-veryLight font-semibold divide-slate-700"
+                : "bg-white text-silver font-semibold"
+            }  `}
+          >
+            {tableItems.map((item, idx) => (
+              <tr key={idx}>
+                <td className="py-5">
+                  <div className="flex items-center justify-center gap-x-3  pl-10 pr-10 lg:pr-0  ">
+                    <img
+                      src={item.avatar}
+                      alt=""
+                      className="w-12 h-12 rounded-full hover:scale-110 duration-100"
+                    />
+                    <div>
+                      <div
+                        className={`block  text-sm font-semibold  duration-200 active:scale-105  ${
+                          isDarkMode ? "text-white" : "text-black"
+                        }  `}
+                      >
+                        {item.name}
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td className="py-4 px-6">{item.position}</td>
+                <td className="py-4 px-6 ">
+                  {item.specialization}
+                  <p>{item.email}</p>
+                </td>
+                <td className="py-4 px-6 ">{item.contact}</td>
+                <td className="py-4 px-6 ">{item.Room}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     </div>

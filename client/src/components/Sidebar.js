@@ -13,7 +13,7 @@ function Sidebar() {
       <div className="flex flex-col mt-4 ">
         <nav className="flex-1 -mx-3 space-y-4 tracking-wide leading-tight ">
           <Link
-            className=" font-bold flex items-center px-3 py-2 text-silver  rounded-full hover:bg-gray-200 hover:text-black hover:font-bold "
+            className=" font-bold flex items-center px-3 py-2 text-silver  rounded-full hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105 hover:font-bold  "
             href="/faculty"
           >
             <svg
@@ -37,7 +37,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver  rounded-full  hover:font-bold hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  "
             href="/assistants"
           >
             <svg
@@ -61,7 +61,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver  rounded-full  hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="/laboratories"
           >
             <svg
@@ -85,7 +85,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver   rounded-full  hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver   rounded-full  hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="/library"
           >
             <svg
@@ -109,7 +109,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="research-publications"
           >
             <svg
@@ -133,7 +133,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="grants-research-publications"
           >
             <svg
@@ -156,7 +156,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="placement-records"
           >
             <svg
@@ -180,7 +180,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="departmental-activities"
           >
             <svg
@@ -204,7 +204,7 @@ function Sidebar() {
           </Link>
 
           <Link
-            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-gray-200 hover:text-black hover:font-bold  "
+            className="flex items-center px-3 py-2 text-silver   rounded-full   hover:bg-blue-50 hover:text-blue-500 duration-300 active:scale-105  hover:font-bold  "
             href="syllabus"
           >
             <svg
