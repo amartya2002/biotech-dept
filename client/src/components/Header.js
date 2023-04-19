@@ -474,7 +474,7 @@ function Modal({ closeModal, closeSidebar }) {
           </ul>
         </div>
         <div className="flex justify-start">
-          <button className="px-4 py-2 bg-slate-900 text-white rounded-lg bg-black">
+          <button className="px-4 py-2  text-white rounded-lg bg-black">
             Faculty Login
           </button>
         </div>
