@@ -395,7 +395,7 @@ function Modal({ closeModal, closeSidebar }) {
   return (
     <div className="absolute inset-0  backdrop-filter backdrop-blur-lg bg-opacity-30 " >
     <div
-      className="fixed top-2.5 left-0 w-full h-1/2 flex animate-modal     "
+      className="fixed top-2.5 left-0 w-full h-96 flex animate-modal     "
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-heading"
@@ -452,7 +452,7 @@ function Modal({ closeModal, closeSidebar }) {
               {/* <p className="font-normal text-silver">Go to our homepage</p> */}
             </li>
             <li className="p-2 hover:bg-slate-100 rounded-xl">
-              <Link href="departmentInfo" className="text-slate-800 hover:text-slate-900">
+              <Link href="about-department" className="text-slate-800 hover:text-slate-900">
                 Our Department
               </Link>
               <p className="font-normal text-silver">
@@ -460,7 +460,7 @@ function Modal({ closeModal, closeSidebar }) {
               </p>
             </li>
             <li className="p-2 hover:bg-slate-100 rounded-xl">
-              <Link href="instituteInfo" className="text-slate-800 hover:text-slate-900">
+              <Link href="about-institute" className="text-slate-800 hover:text-slate-900">
                 Our Institute
               </Link>
               <p className="font-normal text-silver">Discover who we are</p>
@@ -473,13 +473,14 @@ function Modal({ closeModal, closeSidebar }) {
             </li>
           </ul>
         </div>
-        <div className="flex justify-start">
-          <button className="px-4 py-2  text-white rounded-lg bg-black">
+
+        <div className=" flex flex-col ">
+          <button className="text-white px-4 py-2 rounded-full text-sm font-medium bg-black hover:scale-105 active:scale-110 duration-200">
             Faculty Login
           </button>
         </div>
         <div className="flex justify-center mt-36">
-        <button
+        {/* <button
           onClick={() => closeModal(false)}
           className="  text-lightSilver "
         >
@@ -497,7 +498,7 @@ function Modal({ closeModal, closeSidebar }) {
               d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-        </button>
+        </button> */}
         </div>
       </div>
     </div>
