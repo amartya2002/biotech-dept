@@ -50,7 +50,7 @@ function Navbar() {
                   </li>
                   <li>
                     <Link
-                      href="/about-department"
+                      href="about-department"
                       className="text-silver    px-3 py-2 rounded-full text-sm font-semibold duration-200 hover:scale-110 active:scale-125 hover:text-blue-500 "
                     >
                       Our Department
@@ -58,7 +58,7 @@ function Navbar() {
                   </li>
                   <li>
                     <Link
-                      href="/about-department"
+                      href="about-institute"
                       className="text-silver    px-3 py-2 rounded-full text-sm font-semibold duration-200 hover:scale-110 active:scale-125 hover:text-blue-500"
                     >
                       Institute Info

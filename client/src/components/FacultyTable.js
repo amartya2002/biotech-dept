@@ -12,13 +12,14 @@ function FacultyTable() {
     {
       avatar:
         "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-      name: "Liamdddsssssssss Jamedddds laosjdddjcjdn d",
-      contact: "7003960597",
+      name: "Lorem Ipsum",
       position: "HOD, Professor",
+      contact: "7003960597",
       specialization:
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar: "https://randomuser.me/api/portraits/men/86.jpg",
@@ -29,6 +30,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar: "https://randomuser.me/api/portraits/women/79.jpg",
@@ -39,6 +41,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
@@ -49,6 +52,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -60,6 +64,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -71,6 +76,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -82,6 +88,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -93,6 +100,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -104,6 +112,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -115,6 +124,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -126,6 +136,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
     {
       avatar:
@@ -137,6 +148,7 @@ function FacultyTable() {
         "Microwave, antenna, analog electronics, digital electronics",
       Room: "202",
       email: "xydddddddz@hit.com",
+      Vidwan_link: "https://www.google.com/",
     },
   ];
 
@@ -170,6 +182,9 @@ function FacultyTable() {
               <th className="py-3 px-6 w-1/3 ">Specialization</th>
               <th className="py-3 px-6 w-1/3 ">Contact</th>
               <th className="py-3 px-6 w-1/3 ">Room</th>
+              <th className="py-3 px-6 w-1/3  ">
+                Vidwan ID
+              </th>
             </tr>
           </thead>
           <tbody
@@ -202,10 +217,14 @@ function FacultyTable() {
                 <td className="py-4 px-6">{item.position}</td>
                 <td className="py-4 px-6 ">
                   {item.specialization}
-                  <p>{item.email}</p>
+                 
                 </td>
-                <td className="py-4 px-6 ">{item.contact}</td>
+                <td className="py-4 px-6 ">{item.contact}  <p>{item.email}</p></td>
                 <td className="py-4 px-6 ">{item.Room}</td>
+                <td className="py-4 px-6 duration-200 active:scale-105 text-blue-600  ">
+                  <a target="_blank" className="hover:text-blue-500" href={item.Vidwan_link}>Link</a>
+                  
+                </td>
               </tr>
             ))}
           </tbody>

@@ -84,7 +84,7 @@ function LabTable() {
           {isDarkMode ? <BsSun /> : <BsMoon />}
         </button>
       </div>
-      <div className="mt-5 shadow-sm border rounded-lg overflow-scroll   h-screen md:h-96  ">
+      <div className="mt-5 shadow-sm border rounded-lg overflow-scroll     ">
         <table className=" table-fixed  ">
           <thead
             className={`  ${

@@ -15,10 +15,10 @@ function KeypeopleTable() {
         "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
       name: "Lorem Ipsum",
       contact: "7003960597",
-      specialization: "Microwave, analog electronics, biotechnology ",
+      specialization: "Biotechnology lorem ipsum",
       position: "HOD, Professor",
-      Room: "202",
-      email: "paglarocks@hit.com",
+      Room: "212",
+      email: "lorem@hit.com",
       Vidwan_link: "https://www.google.com/",
     },
     {
@@ -26,10 +26,10 @@ function KeypeopleTable() {
         "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
       name: "Lorem Ipsum",
       contact: "7003960597",
-      specialization: "Digital electronics, analog electronics",
+      specialization: "Biotechnology lorem ipsum",
       position: "Dean, Professor",
       Room: "202",
-      email: "xydddddddz@hit.com",
+      email: "loremipsum@hit.com",
       Vidwan_link: "https://www.google.com/",
     },
   ];
@@ -51,7 +51,7 @@ function KeypeopleTable() {
       </div>
       {/* ${isDarkMode ? "bg-black  text-white  font-semibold" : "border-b bg-gray-50"
           }  inside thread */}
-      <div className="mt-2 shadow-sm border rounded-lg overflow-scroll h-22 ">
+      <div className="mt-2 shadow-sm border rounded-lg overflow-scroll  ">
         <table className=" table-fixed  ">
           <thead
             className={`  ${
