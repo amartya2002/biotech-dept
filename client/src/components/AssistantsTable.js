@@ -167,7 +167,7 @@ function AssistantsTable (){
           {isDarkMode ? <BsSun /> : <BsMoon />}
         </button>
       </div>
-      <div className="mt-5 shadow-sm border rounded-lg overflow-scroll   h-screen md:h-96  ">
+      <div className="mt-5 shadow-sm border rounded-lg overflow-scroll   h-[40rem] scrollbar-hide ">
         <table className=" table-fixed  ">
           <thead
             className={`  ${

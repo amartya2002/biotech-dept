@@ -167,7 +167,7 @@ function FacultyTable() {
           {isDarkMode ? <BsSun /> : <BsMoon />}
         </button>
       </div>
-      <div className="mt-5 shadow-sm border rounded-lg overflow-scroll   h-screen md:h-96 scrollbar-hide container  ">
+      <div className="mt-5 shadow-sm border rounded-lg overflow-scroll   h-[40rem] scrollbar-hide container  ">
         <table className=" table-fixed  ">
           <thead
             className={`  ${
@@ -182,9 +182,7 @@ function FacultyTable() {
               <th className="py-3 px-6 w-1/3 ">Specialization</th>
               <th className="py-3 px-6 w-1/3 ">Contact</th>
               <th className="py-3 px-6 w-1/3 ">Room</th>
-              <th className="py-3 px-6 w-1/3  ">
-                Vidwan ID
-              </th>
+              <th className="py-3 px-6 w-1/3  ">Vidwan ID</th>
             </tr>
           </thead>
           <tbody
@@ -215,15 +213,19 @@ function FacultyTable() {
                   </div>
                 </td>
                 <td className="py-4 px-6">{item.position}</td>
+                <td className="py-4 px-6 ">{item.specialization}</td>
                 <td className="py-4 px-6 ">
-                  {item.specialization}
-                 
+                  {item.contact} <p>{item.email}</p>
                 </td>
-                <td className="py-4 px-6 ">{item.contact}  <p>{item.email}</p></td>
                 <td className="py-4 px-6 ">{item.Room}</td>
                 <td className="py-4 px-6 duration-200 active:scale-105 text-blue-600  ">
-                  <a target="_blank" className="hover:text-blue-500" href={item.Vidwan_link}>Link</a>
-                  
+                  <a
+                    target="_blank"
+                    className="hover:text-blue-500"
+                    href={item.Vidwan_link}
+                  >
+                    Link
+                  </a>
                 </td>
               </tr>
             ))}
