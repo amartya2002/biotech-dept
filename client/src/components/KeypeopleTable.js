@@ -2,40 +2,18 @@ import React from "react";
 import { useState } from "react";
 import { BsSun, BsMoon } from "react-icons/bs";
 import Link from "next/link";
+import keypeople from "../../database/keypeople.json"
 
-function KeypeopleTable() {
+function KeypeopleTable({ avatar, name, contact, specialization, position, Room, email, Vidwan_link }) {
   const [isDarkMode, setIsDark] = useState(true);
 
   const handleClick = () => {
     setIsDark(!isDarkMode);
   };
-  const tableItems = [
-    {
-      avatar:
-        "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-      name: "Lorem Ipsum",
-      contact: "7003960597",
-      specialization: "Biotechnology lorem ipsum",
-      position: "HOD, Professor",
-      Room: "212",
-      email: "lorem@hit.com",
-      Vidwan_link: "https://www.google.com/",
-    },
-    {
-      avatar:
-        "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
-      name: "Lorem Ipsum",
-      contact: "7003960597",
-      specialization: "Biotechnology lorem ipsum",
-      position: "Dean, Professor",
-      Room: "202",
-      email: "loremipsum@hit.com",
-      Vidwan_link: "https://www.google.com/",
-    },
-  ];
+  
 
   return (
-    <div className="  max-w-md sm:max-w-screen-xl mx-auto px-4 md:px-8  mt-10  ">
+    <div className="  max-w-md sm:max-w-screen-xl mx-auto px-4 md:px-8  mt-10   ">
       <div className="max-w-lg flex ">
         <p
           className={`text-2xl font-bold text-gray-900 mr-4 hover:text-blue-500  duration-200 active:scale-105 `}
@@ -51,7 +29,7 @@ function KeypeopleTable() {
       </div>
       {/* ${isDarkMode ? "bg-black  text-white  font-semibold" : "border-b bg-gray-50"
           }  inside thread */}
-      <div className="mt-2 shadow-sm border rounded-lg overflow-scroll  ">
+      <div className="mt-2 shadow-sm border rounded-lg overflow-scroll scrollbar-hide  ">
         <table className=" table-fixed  ">
           <thead
             className={`  ${
@@ -90,7 +68,7 @@ function KeypeopleTable() {
                 : "bg-white text-silver font-semibold"
             }  `}
           >
-            {tableItems.map((item, idx) => (
+            {keypeople.map((item, idx) => (
               <tr key={idx}>
                 <td className="py-5">
                   <div className="flex items-center gap-x-3 pl-5 pr-12    ">

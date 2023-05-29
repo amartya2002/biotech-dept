@@ -50,3 +50,34 @@ body{
 }
 
 
+
+/* Hide default scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Style for the custom scrollbar */
+::-webkit-scrollbar-track {
+  background: #ff6060;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6060;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Set the custom scrollbar size */
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+
+
+
+

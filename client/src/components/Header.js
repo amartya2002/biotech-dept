@@ -78,7 +78,7 @@ function Navbar() {
                 <div className="ml-3 relative">
                   <button className="text-white  px-4 py-2 rounded-full text-sm font-medium bg-black hover:scale-105 active:scale-110 duration-200  ">
                  
-                    <Link href="/sign-in"> Faculty Login</Link>
+                    <Link href="/login"> Faculty Login</Link>
                   </button>
                 </div>
               </div>

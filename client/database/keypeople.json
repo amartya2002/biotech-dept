@@ -1,0 +1,24 @@
+[ 
+    {
+      "avatar":
+        "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+      "name": "Lorem Ipsum1",
+      "contact": "7003960597",
+      "specialization": "Biotechnology lorem ipsum",
+      "position": "HOD, Professor",
+      "Room": "212",
+      "email": "lorem@hit.com",
+      "Vidwan_link": "https://www.google.com/"
+    },
+    {
+      "avatar":
+        "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+      "name": "Lorem Ipsum2",
+      "contact": "7003960597",
+      "specialization": "Biotechnology lorem ipsum",
+      "position": "Dean, Professor",
+      "Room": "202",
+      "email": "loremipsum@hit.com",
+      "Vidwan_link": "https://www.google.com/"
+    }
+  ]
